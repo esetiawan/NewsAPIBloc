@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:newsapi/presentation/bloc/news_search/news_search_bloc.dart';
 import 'package:newsapi/presentation/pages/load_image.dart';
+import 'package:newsapi/presentation/pages/load_map.dart';
 import 'package:newsapi/presentation/pages/more_news.dart';
 import 'package:newsapi/presentation/pages/news_search_screen.dart';
 import 'package:provider/provider.dart';
@@ -56,6 +57,7 @@ class MyApp extends StatelessWidget {
                               BorderRadius.all(Radius.circular(0)))))),
           initialRoute: LoadImageScreen.routeName,
           routes: {
+            LoadMapScreen.routeName:: (context) => const LoadMapScreen(),
             LoadImageScreen.routeName: (context) => const LoadImageScreen(),
             NewsScreen.routeName: (context) => const NewsScreen(),
             NewsScreenSearch.routeName: (context) => const NewsScreenSearch(),
